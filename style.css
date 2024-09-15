@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.open {
+    display: flex;
+    float: right;
+    padding: 17px;
+    color: white;
+    position: relative;
+    right: 280px;
+    width: 180px;
+    bottom: -54px;
+    border-radius: 40px;
+    font-size: .9em;
+    justify-content: center;
+    background-color: #377DFF;
+}
+.close {
+    display: flex;
+    padding: 17px;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 0;
+    left: 660px;
+    width: 200px;
+    bottom: -4105px;
+    font-size: .9em;
+    justify-content: center;
+    color: white;
+    background-color: #184294;
+}
+.grid {
+    display: grid;
+}
+.align {
+    align-items: center;
+}
+.three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.flex {
+    display: flex;
+}
+.fd {
+    display: flex;
+    flex-direction: column;
+}
+.left-top1 img {
+    width: 70px;
+}
+.left-top2 p {
+    font-size: 1.2em;
+}
+.left-top2 span {
+    font-size: .6em;
+}
+.border-bot {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.338);
+    padding: 10px;
+}
+.padding {
+    padding: 10px;
+}
+.comp1 {
+    font-size: 2em;
+    color: rgba(0, 170, 255, 0.71);
+}
+.comp3 p {
+    font-size: .7em;
+}
+.btn1 {
+    width: 100%;
+    font-size: .7em;
+    border-radius: 20px;
+}
+.btn1 a {
+    text-decoration: none;
+    color: white;
+}
+.home {
+    gap: 20px;
+    font-size: .8em;
+}
+.g10 {
+    gap: 10px;
+}
+.jc {
+    justify-content: space-between;
+}
+.white {
+    color: white;
+    font-size: .6em;
+    align-items: center;
+    display: flex;
+}
+.w80 {
+    width: 60%;
+    margin: auto;
+}
+.bgblue {
+    background-color: #083996;
+    padding: 5px;
+}
+.hero-bg {
+    background-image: url(https://s3.envato.com/files/289578920/02_ebanking-home-page.png);
+    height: 4300px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+label {
+    color: white;
+}
+input {
+    background-color: #FAFAFA;
+}
+select {
+    background-color: #FAFAFA;
+}
+.nav-bg {
+    background-image: url(https://s3.envato.com/files/289578920/02_ebanking-home-page.png);
+    height: 160px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#loanForm {
+    width: 45%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.245);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Income {
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+}
+.space input {
+    display: flex;
+    flex-direction: column;
+}
+.space1 select {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: white;
+    background-color: #377DFF;
+}
+.div {
+    display: flex;
+    gap: 150px;
+}
+.div1 {
+    display: flex;
+    gap: 60px;
+}
+span {
+    font-size: .9rem;
+    color: red;
+    height: 20px;
+}
+#result {
+    font-size: 3em;
+    font-weight: 100;
+    text-transform: capitalize;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <div class="nav-bg"></div>
+    <form id="loanForm">
+          <label for="annualIncome">Total Annual Income:</label>
+            <div style="display: flex; flex-direction: column;">
+                <input
+                type="number" id="annualIncome" name="annualIncome" class="Income" placeholder="Total Annual Income"/>
+                <span id="annualIncomeErr" class="error" style="font-size: .9rem; color: red; height: 20px;"></span>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+            <label for="currentAmount">Current Amount In Account:</label>
+          <input type="number" id="currentAmount" name="currentAmount" class="Income" placeholder="Current Amount In Account"/>
+        <span id="currentAmountErr" class="error"></span>
+            </div>
+
+          <div class="div1">
+            <div class="space">
+                <label for="loanAmount">Desired Loan Amount:</label>
+                    <input type="number" id="loanAmount" name="loanAmount" class="Income" placeholder="Desired Loan Amount" style="width: 120%;"/>
+                    <span id="loanAmountErr" class="error"></span>
+            </div>
+            <div class="space">
+                <label for="creditHistory">6 Months Credit History:</label>
+            <div style="display: flex; flex-direction: column;" class="space1">
+                <select name="creditHistory" id="creditHistory" class="Income" style="width: 185%;">
+                    <option value="good">Good</option>
+                    <option value="bad">Bad</option>
+                </select>
+                <span id="creditHistoryErr" class="error"></span>
+            </div>
+            </div>
+          </div>
+          <div class="div">
+              <div class="space">
+                <label for="lastDeposit">Last Deposit Date:</label>
+                <input type="date" id="lastDeposit" name="lastDeposit" class="Income" style="width: 200%;"/>
+                <span id="lastDepositErr" class="error"></span>
+        </div>
+  
+        <div class="space">
+          <label for="lastLoan">Last Loan Collection Date:</label>
+          <input type="date" id="lastLoan" name="lastLoan" class="Income" style="width: 170%;" />
+          <span id="lastLoanErr" class="error" style="font-size: .6rem; color: red;"></span>
+        </div>
+          </div>
+  
+          <label for="repaymentPeriod">Loan Repayment Period (Months):</label>
+            <div style="display: flex; flex-direction: column;">
+          <input type="number" id="repaymentPeriod" name="repaymentPeriod" class="Income" placeholder="Loan Repayment Period (Months)"/>
+          <span id="repaymentPeriodErr" class="error"></span>
+            </div>
+  
+            <label for="accountType">Account Operated Type:</label>
+            <div style="display: flex; flex-direction: column;">
+              <select name="accountType" id="accountType" class="Income">
+            <option value="current">Current</option>
+            <option value="savings">Savings</option>
+          </select>
+          <span id="accountTypeErr" class="error"></span>
+            </div>
+  
+        <button type="submit" class="btn">Check Eligibility</button>
+        <div id="result"></div>
+      </form>
+  
+  
+      <script src="styles.js"></script>
+</body>
+</html>
